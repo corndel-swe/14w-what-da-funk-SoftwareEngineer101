@@ -12,7 +12,7 @@ const ArtistTile = ({ imgSrc, title, text }) => {
 
   const buttonJSX = (
     <div className="artist-tile__content artist-tile__content--button">
-      <h3 className="artist-tile__heading">TITLE</h3>
+      <h3 className="artist-tile__heading">{title}/h3>
       <div onClick={handleClick}>
         <Button buttonText={"Find out more"} isSecondary={true} />
       </div>
