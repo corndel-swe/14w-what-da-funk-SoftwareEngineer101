@@ -24,7 +24,7 @@ const Exercise1 = (props) => {
   return (
     <header className="greeting">
       <img src={greetingImg} className="greeting__img" alt={greetingTime} />
-      <h2 className= "greeting__heading">Good {greetingTime} <br /> {firstName}
+      <h2 className= "greeting__heading"> Good {greetingTime} <br /> {firstName}
       </h2>
     </header>
   );

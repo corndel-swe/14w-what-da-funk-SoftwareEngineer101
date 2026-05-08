@@ -1,21 +1,34 @@
 import "./Button.css";
 
-const Button = ({ isSecondary, isInverted, inCaps }) => {
+const Button = ({ isSecondary, isInverted, inCaps, buttonText }) => {
   let buttonStyles = ["button"];
-  let buttonText = ["button"].toUpperCase();
+
 
   if (!isSecondary) {
     buttonStyles.push("primary");
 
-  } else {buttonStyles.push("secondary")};
+  } else {buttonStyles.push("secondary")
+
+      }
 
   if (!isInverted) {
-      buttonStyles.push(false)};
+      buttonStyles.push("")
+      }
   else {
-      buttonStyles.push("inverted")};
+      buttonStyles.push("inverted")
+      }
 
-  if (!inCaps) {
-      buttonText;
+  let displayText;
+
+
+  if (inCaps) {
+     displayText = buttonText.toUpperCase()
+     }
+ else {
+     displayText = buttonText
+     }
+
+
 
 
   return <button className={buttonStyles.join(" ")}>{buttonText}</button>;
